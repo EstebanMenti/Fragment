@@ -8,6 +8,7 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.example.fragment.R;
 
@@ -16,7 +17,7 @@ import com.example.fragment.R;
  */
 public class DetailsFragment extends Fragment {
 
-
+    private TextView textView;
     public DetailsFragment() {
         // Required empty public constructor
     }
@@ -27,6 +28,7 @@ public class DetailsFragment extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_details, container, false);
 
+        textView = view.findViewById(R.id.textViewDetails);
 
         // Inflate the layout for this fragment
         return view;
