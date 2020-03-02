@@ -34,4 +34,8 @@ public class DetailsFragment extends Fragment {
         return view;
     }
 
+    public void renderText(String text){
+        textView.setText(text);
+    }
+
 }
